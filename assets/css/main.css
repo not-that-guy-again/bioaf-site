@@ -439,6 +439,40 @@ pre code {
   margin: 0;
 }
 
+/* ---- Longevity Section ---- */
+
+.longevity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.longevity-card {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.75rem;
+}
+
+.longevity-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+}
+
+.longevity-card p {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .longevity-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---- Open Source Banner ---- */
 
 .oss-banner {
