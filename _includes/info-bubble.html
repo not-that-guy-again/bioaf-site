@@ -1,0 +1,10 @@
+<!-- Usage: {% include info-bubble.html title="Under the hood" content="Your explanation here." %} -->
+<details class="info-bubble">
+  <summary>
+    <span class="info-icon">i</span>
+    {{ include.title }}
+  </summary>
+  <div class="info-content">
+    {{ include.content | markdownify }}
+  </div>
+</details>

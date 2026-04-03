@@ -1,0 +1,21 @@
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="{{ '/' | relative_url }}" class="nav-logo">
+      <span class="logo-text">bioAF</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      {% for link in site.data.nav.main %}
+      <li>
+        <a href="{{ link.url | relative_url }}"
+           {% if link.external %}target="_blank" rel="noopener"{% endif %}
+           {% if page.url == link.url %}class="active"{% endif %}>
+          {{ link.title }}{% if link.external %} <span class="external-icon">&nearr;</span>{% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

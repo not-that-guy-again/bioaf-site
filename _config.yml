@@ -1,0 +1,26 @@
+title: bioAF
+description: Computational biology infrastructure in 30 minutes, not 6 months.
+url: https://bioaf.co
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+
+collections:
+  docs:
+    output: true
+    permalink: /docs/:path/
+
+defaults:
+  - scope:
+      path: "docs"
+    values:
+      layout: docs
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

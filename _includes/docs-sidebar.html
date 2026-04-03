@@ -1,0 +1,31 @@
+<aside class="docs-sidebar">
+  <button class="sidebar-toggle" aria-label="Toggle sidebar" aria-expanded="false">
+    Menu
+  </button>
+  <nav class="sidebar-nav">
+    {% for section in site.data.nav.docs_sidebar %}
+      {% if section.items %}
+        <div class="sidebar-section">
+          <h4 class="sidebar-heading">{{ section.title }}</h4>
+          <ul>
+            {% for item in section.items %}
+            <li>
+              <a href="{{ item.url | relative_url }}"
+                 {% if page.url == item.url %}class="active"{% endif %}>
+                {{ item.title }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% else %}
+        <div class="sidebar-section">
+          <a href="{{ section.url | relative_url }}"
+             class="sidebar-heading-link {% if page.url == section.url %}active{% endif %}">
+            {{ section.title }}
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </nav>
+</aside>
