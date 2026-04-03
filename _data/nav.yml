@@ -5,6 +5,8 @@ main:
     url: /docs/features/
   - title: Docs
     url: /docs/
+  - title: Services
+    url: /services/
   - title: GitHub
     url: https://github.com/not-that-guy-again/bioAF
     external: true
