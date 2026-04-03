@@ -24,6 +24,8 @@ docs_sidebar:
         url: /docs/installation/post-setup/
       - title: GCP Costs
         url: /docs/installation/gcp-costs/
+      - title: The bioaf Script
+        url: /docs/installation/bioaf-script/
   - title: User Guides
     items:
       - title: For Bench Scientists
