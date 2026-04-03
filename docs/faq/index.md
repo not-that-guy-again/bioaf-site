@@ -80,4 +80,4 @@ Open an issue on [GitHub](https://github.com/not-that-guy-again/bioAF/issues).
 
 ### Is professional support available?
 
-Yes. We offer support plans and consulting for teams that need help with setup, customization, or ongoing operations. Contact [support@bioaf.co](mailto:support@bioaf.co).
+Yes. We offer support plans and consulting for teams that need help with setup, customization, or ongoing operations. Contact [brent@bioaf.co](mailto:brent@bioaf.co).
