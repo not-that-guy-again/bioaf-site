@@ -58,6 +58,8 @@ Your session starts in about a minute. Click **Open** to connect directly in you
 
 <img src="{{ '/assets/images/screenshot-notebooks.png' | relative_url }}" alt="Notebook Sessions page showing active sessions with environment versions and resource usage" class="screenshot-img">
 
+<img src="{{ '/assets/images/screenshot-notebook-session.png' | relative_url }}" alt="Active notebook session with JupyterHub open in browser" class="screenshot-img">
+
 Sessions automatically stop after a configurable idle period to manage costs. Your work is saved — you can restart and pick up where you left off.
 
 ### SSH access

@@ -27,6 +27,8 @@ Create environments by uploading a Dockerfile or conda specification. bioAF buil
 
 <img src="{{ '/assets/images/screenshot-notebook-environment.png' | relative_url }}" alt="Notebook session environment selection" class="screenshot-img">
 
+<img src="{{ '/assets/images/screenshot-rstudio-server.png' | relative_url }}" alt="RStudio Server running in browser within a bioAF notebook session" class="screenshot-img">
+
 ## Idle auto-stop
 
 To manage costs, sessions automatically stop after a configurable idle period. When you come back, restart the session and pick up where you left off — your files are still there.
