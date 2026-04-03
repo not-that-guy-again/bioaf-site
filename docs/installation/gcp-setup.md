@@ -76,6 +76,8 @@ On the **Grant this service account access to the project** screen:
 
 2. Click **Continue**, then **Done**
 
+{% include info-bubble.html title="bioAF will guide you on additional permissions" content="During setup, bioAF checks your service account's permissions against the features you have enabled. If anything is missing, it will tell you exactly which roles to add and why. The three roles above are the minimum to get started." %}
+
 **Download a key:**
 
 1. Click on the `bioaf-admin` service account you just created
