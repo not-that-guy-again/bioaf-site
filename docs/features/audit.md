@@ -26,8 +26,7 @@ Every significant action is recorded:
 - Component provisioning and configuration changes
 - Budget threshold events
 
-<!-- TODO: Screenshot of audit log -->
-<div class="screenshot">Screenshot: Audit log showing a filterable, paginated list of events with user, action, resource, and timestamp columns</div>
+<img src="{{ '/assets/images/screenshot-audit-log.png' | relative_url }}" alt="Audit log showing a filterable, paginated list of events with user, action, resource, and timestamp columns" class="screenshot-img">
 
 ## Human-readable descriptions
 

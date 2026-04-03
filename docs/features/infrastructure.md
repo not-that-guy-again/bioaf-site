@@ -15,8 +15,7 @@ The **Component Settings** page shows every available platform component:
 - Current status (enabled, disabled, provisioning)
 - Dependencies on other components
 
-<!-- TODO: Screenshot of component settings -->
-<div class="screenshot">Screenshot: Component Settings page with component cards showing descriptions, cost estimates, status badges, and toggle switches</div>
+<img src="{{ '/assets/images/screenshot-infra-deployment.png' | relative_url }}" alt="Component Settings page with component cards showing descriptions, cost estimates, status badges, and toggle switches" class="screenshot-img">
 
 ## Enabling a component
 

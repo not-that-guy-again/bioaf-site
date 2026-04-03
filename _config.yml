@@ -2,6 +2,7 @@ title: bioAF
 description: Computational biology infrastructure in 30 minutes, not 6 months.
 url: https://bioaf.co
 baseurl: ""
+image: /assets/images/mascot.png
 
 markdown: kramdown
 permalink: pretty

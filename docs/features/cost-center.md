@@ -16,8 +16,7 @@ The Cost Center shows:
 - **Trend charts** — spending over time with projections
 - **Budget status** — visual indicator of how close you are to your threshold
 
-<!-- TODO: Screenshot of cost center -->
-<div class="screenshot">Screenshot: Cost Center dashboard showing spending breakdown chart, trend line, and budget progress bar</div>
+<img src="{{ '/assets/images/screenshot-cost-center.png' | relative_url }}" alt="Cost Center dashboard showing spending breakdown chart, trend line, and budget progress bar" class="screenshot-img">
 
 ## Budget alerts
 

@@ -26,8 +26,7 @@ Samples are organized within experiments and can be grouped into **batches** for
 - Links to uploaded FASTQ files
 - Links to pipeline results
 
-<!-- TODO: Screenshot of experiment detail page showing samples -->
-<div class="screenshot">Screenshot: Experiment detail page with sample table, batch groupings, and status indicators</div>
+<img src="{{ '/assets/images/screenshot-experiment-description.png' | relative_url }}" alt="Experiment detail page with sample table, batch groupings, and status indicators" class="screenshot-img">
 
 ## Experiment lifecycle
 

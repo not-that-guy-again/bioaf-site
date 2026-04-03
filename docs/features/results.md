@@ -15,8 +15,7 @@ For single-cell datasets, bioAF integrates [cellxgene](https://chanzuckerberg.gi
 - Select and compare cell populations
 - Export visualizations
 
-<!-- TODO: Screenshot of cellxgene viewer -->
-<div class="screenshot">Screenshot: cellxgene viewer showing UMAP embedding with cells colored by cluster, gene expression sidebar, and metadata panel</div>
+<img src="{{ '/assets/images/screenshot-plot-preview.png' | relative_url }}" alt="cellxgene viewer showing UMAP embedding with cells colored by cluster, gene expression sidebar, and metadata panel" class="screenshot-img">
 
 No installation needed — cellxgene runs as part of the platform and opens directly in your browser.
 
@@ -30,8 +29,7 @@ Every pipeline run generates a QC dashboard with key quality metrics:
 - Doublet scores
 - Mitochondrial content
 
-<!-- TODO: Screenshot of QC dashboard -->
-<div class="screenshot">Screenshot: QC dashboard with summary statistics, violin plots, and quality metric charts</div>
+<img src="{{ '/assets/images/screenshot-qc-dashboard.png' | relative_url }}" alt="QC dashboard with summary statistics, violin plots, and quality metric charts" class="screenshot-img">
 
 ## Plot archive
 

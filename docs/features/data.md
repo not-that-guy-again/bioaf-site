@@ -15,8 +15,7 @@ The **Data & Files** section gives you a unified view of all data on the platfor
 - Upload new files via drag-and-drop
 - Download files individually or in bulk
 
-<!-- TODO: Screenshot of file browser -->
-<div class="screenshot">Screenshot: File browser with experiment-organized file tree, metadata columns, and download buttons</div>
+<img src="{{ '/assets/images/screenshot-files.png' | relative_url }}" alt="File browser with experiment-organized file tree, metadata columns, and download buttons" class="screenshot-img">
 
 ## Data lifecycle
 

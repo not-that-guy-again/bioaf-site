@@ -16,8 +16,7 @@ By default, bioAF starts with the core platform only. Additional capabilities ar
 4. Review the infrastructure plan that bioAF generates
 5. Confirm to provision
 
-<!-- TODO: Screenshot of component settings page -->
-<div class="screenshot">Screenshot: Component Settings page showing available components with cost estimates and toggle switches</div>
+<img src="{{ '/assets/images/screenshot-infra-deployment.png' | relative_url }}" alt="Component Settings page showing available components with cost estimates and toggle switches" class="screenshot-img">
 
 {% include info-bubble.html title="What's happening when I toggle a component?" content="When you enable a component, bioAF generates a Terraform plan — a description of the cloud resources it needs to create. You review the plan (including cost estimates) and confirm. bioAF then provisions those resources in your GCP project. You can disable components later to remove the resources and stop incurring costs." %}
 

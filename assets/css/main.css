@@ -653,6 +653,33 @@ pre code {
   margin: 1.5rem 0;
 }
 
+/* ---- Screenshot Images ---- */
+
+.screenshot-img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ---- Nav / Footer Logo ---- */
+
+.nav-logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.footer-logo-img {
+  height: 28px;
+  width: auto;
+  display: block;
+  margin-bottom: 0.75rem;
+  opacity: 0.85;
+}
+
 /* ---- Footer ---- */
 
 .site-footer {

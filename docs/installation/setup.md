@@ -43,8 +43,8 @@ This checks your prerequisites and generates the configuration file at `docker/.
 
 Builds the Docker images for the backend, frontend, and supporting services.
 
-<!-- TODO: Screenshot of terminal output during build -->
-<div class="screenshot">Screenshot: terminal output during ./bioaf build</div>
+<!-- TODO: screenshot-terminal-build.png -->
+<div class="screenshot">Screenshot coming soon: terminal output during ./bioaf build</div>
 
 ### 4. Start the services
 
@@ -74,8 +74,7 @@ You'll be prompted for an email and password. This creates the first user with f
 
 Navigate to `http://localhost:8080` in your browser and log in with your admin credentials.
 
-<!-- TODO: Screenshot of login page -->
-<div class="screenshot">Screenshot: bioAF login page</div>
+<img src="{{ '/assets/images/screenshot-login.png' | relative_url }}" alt="bioAF login page" class="screenshot-img">
 
 ## Useful commands
 

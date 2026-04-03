@@ -27,8 +27,7 @@ Select a pipeline, choose your experiment and samples, configure any parameter o
 - Collecting outputs to the results bucket
 - Notifying you when it's done
 
-<!-- TODO: Screenshot of pipeline launch configuration -->
-<div class="screenshot">Screenshot: Pipeline launch form with experiment selection and parameter configuration</div>
+<img src="{{ '/assets/images/screenshot-pipeline-launch-wizard.png' | relative_url }}" alt="Pipeline launch form with experiment selection and parameter configuration" class="screenshot-img">
 
 ## Real-time monitoring
 
@@ -39,8 +38,7 @@ Every running pipeline shows:
 - **Resource usage** — CPU, memory, and timing per stage
 - **Live logs** — Stream logs from any running stage
 
-<!-- TODO: Screenshot of pipeline run with DAG -->
-<div class="screenshot">Screenshot: Pipeline run detail showing DAG visualization with color-coded stage statuses</div>
+<img src="{{ '/assets/images/screenshot-pipeline-provenance.png' | relative_url }}" alt="Pipeline run detail showing DAG visualization with color-coded stage statuses" class="screenshot-img">
 
 ## Outputs and results
 

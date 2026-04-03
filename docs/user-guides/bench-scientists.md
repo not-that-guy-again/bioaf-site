@@ -16,8 +16,7 @@ This guide covers the day-to-day workflow for bench scientists using bioAF. Ever
    - Any relevant experimental conditions
 3. Click **Create**
 
-<!-- TODO: Screenshot of new experiment form -->
-<div class="screenshot">Screenshot: New Experiment form with metadata fields</div>
+<img src="{{ '/assets/images/screenshot-experiment-description.png' | relative_url }}" alt="New Experiment form with metadata fields" class="screenshot-img">
 
 bioAF uses [MINSEQE-compliant](https://doi.org/10.1038/nbt1556) metadata standards so your experiments are publication-ready from the start.
 
@@ -33,8 +32,7 @@ bioAF uses [MINSEQE-compliant](https://doi.org/10.1038/nbt1556) metadata standar
    - Any custom metadata fields
 3. You can add samples one at a time or batch upload from a spreadsheet
 
-<!-- TODO: Screenshot of sample table -->
-<div class="screenshot">Screenshot: Sample table showing batch of samples with metadata columns</div>
+<img src="{{ '/assets/images/screenshot-experiment-sample-view.png' | relative_url }}" alt="Sample table showing batch of samples with metadata columns" class="screenshot-img">
 
 ## Uploading FASTQ files
 
@@ -42,8 +40,7 @@ bioAF uses [MINSEQE-compliant](https://doi.org/10.1038/nbt1556) metadata standar
 2. Drag and drop your FASTQ files, or click **Upload**
 3. bioAF automatically associates files with the correct samples based on naming conventions
 
-<!-- TODO: Screenshot of upload dialog -->
-<div class="screenshot">Screenshot: File upload dialog with drag-and-drop area</div>
+<img src="{{ '/assets/images/screenshot-experiment-sample-bulk-upload.png' | relative_url }}" alt="File upload dialog with drag-and-drop area" class="screenshot-img">
 
 {% include info-bubble.html title="Can the sequencer upload automatically?" content="Yes. If your admin has configured auto-ingest, bioAF watches for new files from your sequencer and imports them automatically. Ask your admin if this is set up." %}
 
@@ -55,8 +52,7 @@ Once a pipeline has run on your experiment:
 
 Navigate to **Results > QC** on your experiment page. The QC dashboard shows quality metrics for your sequencing run — cell counts, read depth, mapping rates, and more.
 
-<!-- TODO: Screenshot of QC dashboard -->
-<div class="screenshot">Screenshot: QC dashboard showing cell counts, read depth, and quality metrics</div>
+<img src="{{ '/assets/images/screenshot-qc-dashboard.png' | relative_url }}" alt="QC dashboard showing cell counts, read depth, and quality metrics" class="screenshot-img">
 
 ### Interactive single-cell visualization
 
@@ -67,8 +63,7 @@ Click **View in cellxgene** to open an interactive explorer for your single-cell
 - Select cell populations for comparison
 - Export plots
 
-<!-- TODO: Screenshot of cellxgene -->
-<div class="screenshot">Screenshot: cellxgene viewer showing UMAP embedding colored by cell type clusters</div>
+<img src="{{ '/assets/images/screenshot-plot-preview.png' | relative_url }}" alt="cellxgene viewer showing UMAP embedding colored by cell type clusters" class="screenshot-img">
 
 ### Downloading results
 

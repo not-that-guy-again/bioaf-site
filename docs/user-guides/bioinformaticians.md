@@ -17,8 +17,7 @@ Navigate to **Pipelines** to see the available workflows. bioAF ships with nf-co
 - **nf-core/atacseq** — ATAC-seq
 - And more, with the ability to add custom pipelines
 
-<!-- TODO: Screenshot of pipeline catalog -->
-<div class="screenshot">Screenshot: Pipeline catalog showing available workflows with descriptions</div>
+<img src="{{ '/assets/images/screenshot-pipeline-catalog.png' | relative_url }}" alt="Pipeline catalog showing available workflows with descriptions" class="screenshot-img">
 
 ### Launching a pipeline run
 
@@ -28,8 +27,7 @@ Navigate to **Pipelines** to see the available workflows. bioAF ships with nf-co
 4. Set compute resources (CPU, memory)
 5. Click **Launch**
 
-<!-- TODO: Screenshot of pipeline launch configuration -->
-<div class="screenshot">Screenshot: Pipeline launch form with experiment selection, parameter overrides, and resource settings</div>
+<img src="{{ '/assets/images/screenshot-pipeline-launch-wizard.png' | relative_url }}" alt="Pipeline launch form with experiment selection, parameter overrides, and resource settings" class="screenshot-img">
 
 {% include info-bubble.html title="What are Nextflow and Snakemake?" content="Nextflow and Snakemake are workflow managers — tools that break a complex analysis into steps, run them in the right order, and handle parallelism and error recovery. bioAF manages them for you, so you just pick your pipeline, select your data, and hit launch." %}
 
@@ -42,8 +40,7 @@ Once launched, you can track progress from the **Runs** page:
 - Resource usage and timing per stage
 - Access to logs for troubleshooting
 
-<!-- TODO: Screenshot of pipeline run detail with DAG -->
-<div class="screenshot">Screenshot: Pipeline run detail page showing DAG visualization, stage statuses, and progress</div>
+<img src="{{ '/assets/images/screenshot-pipeline-provenance.png' | relative_url }}" alt="Pipeline run detail page showing DAG visualization, stage statuses, and progress" class="screenshot-img">
 
 ## Working with notebooks
 
@@ -59,8 +56,7 @@ Once launched, you can track progress from the **Runs** page:
 
 Your session starts in about a minute. Click **Open** to connect directly in your browser.
 
-<!-- TODO: Screenshot of notebook session list -->
-<div class="screenshot">Screenshot: Notebook Sessions page showing active sessions with environment versions and resource usage</div>
+<img src="{{ '/assets/images/screenshot-notebooks.png' | relative_url }}" alt="Notebook Sessions page showing active sessions with environment versions and resource usage" class="screenshot-img">
 
 Sessions automatically stop after a configurable idle period to manage costs. Your work is saved — you can restart and pick up where you left off.
 
@@ -83,8 +79,8 @@ Environments define the software available in your notebook sessions and pipelin
 
 bioAF builds the environment image and makes it available for notebook sessions.
 
-<!-- TODO: Screenshot of environment builder -->
-<div class="screenshot">Screenshot: Environment creation form with Dockerfile editor and build status</div>
+<!-- TODO: screenshot-environment-builder.png -->
+<div class="screenshot">Screenshot coming soon: Environment creation form with Dockerfile editor and build status</div>
 
 {% include info-bubble.html title="What is a Dockerfile?" content="A Dockerfile is a recipe that lists the software to install in an environment — think of it as a shopping list for your analysis tools. If you're more comfortable with conda, you can upload a conda `environment.yml` file instead." %}
 
@@ -101,8 +97,7 @@ The **Data & Files** section lets you:
 - Download results, count matrices, and reports
 - See file metadata (size, upload date, associated experiment)
 
-<!-- TODO: Screenshot of file browser -->
-<div class="screenshot">Screenshot: File browser showing experiment data files with metadata columns</div>
+<img src="{{ '/assets/images/screenshot-files.png' | relative_url }}" alt="File browser showing experiment data files with metadata columns" class="screenshot-img">
 
 ## Adding custom pipelines
 
