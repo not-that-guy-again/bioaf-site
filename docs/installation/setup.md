@@ -72,7 +72,7 @@ You'll be prompted for an email and password. This creates the first user with f
 
 ### 7. Open bioAF
 
-Navigate to `http://localhost:8080` in your browser and log in with your admin credentials.
+Navigate to `https://<your-server-ip>` in your browser and log in with your admin credentials. The setup command will print the exact URL when it completes.
 
 <img src="{{ '/assets/images/screenshot-login.png' | relative_url }}" alt="bioAF login page" class="screenshot-img">
 
