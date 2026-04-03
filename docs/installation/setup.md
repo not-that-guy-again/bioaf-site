@@ -43,8 +43,7 @@ This checks your prerequisites and generates the configuration file at `docker/.
 
 Builds the Docker images for the backend, frontend, and supporting services.
 
-<!-- TODO: screenshot-terminal-build.png -->
-<div class="screenshot">Screenshot coming soon: terminal output during ./bioaf build</div>
+<img src="{{ '/assets/images/screenshot-build.png' | relative_url }}" alt="Terminal output during ./bioaf build" class="screenshot-img">
 
 ### 4. Start the services
 
@@ -91,7 +90,7 @@ Navigate to `https://<your-server-ip>` in your browser and log in with your admi
 
 **"Docker is not running"** — Make sure Docker Desktop (or the Docker daemon) is started before running setup.
 
-**"Port 8080 is already in use"** — Another application is using port 8080. Stop it, or edit `docker/.env` to change the port.
+**"Port 443 is already in use"** — Another application is using port 443. Stop it, or edit `docker/.env` to change the port.
 
 **Build fails with network errors** — Check your internet connection. The build needs to download base images and dependencies.
 

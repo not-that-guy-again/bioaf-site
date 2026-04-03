@@ -79,14 +79,17 @@ Environments define the software available in your notebook sessions and pipelin
 
 bioAF builds the environment image and makes it available for notebook sessions.
 
-<!-- TODO: screenshot-environment-builder.png -->
-<div class="screenshot">Screenshot coming soon: Environment creation form with Dockerfile editor and build status</div>
+<img src="{{ '/assets/images/screenshot-environment-version-create.png' | relative_url }}" alt="Environment creation form" class="screenshot-img">
+
+<img src="{{ '/assets/images/screenshot-environment-version-docker-conda.png' | relative_url }}" alt="Environment Dockerfile and conda spec options" class="screenshot-img">
 
 {% include info-bubble.html title="What is a Dockerfile?" content="A Dockerfile is a recipe that lists the software to install in an environment — think of it as a shopping list for your analysis tools. If you're more comfortable with conda, you can upload a conda `environment.yml` file instead." %}
 
 ### Versioning
 
 Every time you update an environment, bioAF creates a new version. Previous versions remain available, so you can always go back to the exact setup that produced a specific result.
+
+<img src="{{ '/assets/images/screenshot-environment-version.png' | relative_url }}" alt="Environment versions list" class="screenshot-img">
 
 ## Accessing data and files
 

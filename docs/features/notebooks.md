@@ -25,8 +25,7 @@ Every notebook session runs in a **versioned environment** — a specific set of
 
 Create environments by uploading a Dockerfile or conda specification. bioAF builds the image and makes it available for sessions.
 
-<!-- TODO: screenshot-notebook-new-session.png -->
-<div class="screenshot">Screenshot coming soon: New Session dialog with environment selection, resource configuration, and session type toggle</div>
+<img src="{{ '/assets/images/screenshot-notebook-environment.png' | relative_url }}" alt="Notebook session environment selection" class="screenshot-img">
 
 ## Idle auto-stop
 
