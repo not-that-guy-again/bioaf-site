@@ -34,15 +34,10 @@ You'll need a GCP project with billing enabled. bioAF provisions infrastructure 
 
 ## Expected cloud costs
 
-Once deployed, the base platform costs roughly **$110/month** on GCP when idle:
+bioAF is free. Running it on Google Cloud Platform is not — you'll pay Google directly for the infrastructure it uses (compute, database, storage). Costs scale with usage: more pipeline runs and notebook sessions mean higher bills; an idle platform costs very little.
 
-| Component | Estimated cost |
-|-----------|---------------|
-| Compute cluster (GKE Autopilot) | ~$70/month |
-| Managed database (Cloud SQL) | ~$30/month |
-| Storage (GCS buckets) | ~$0 when empty |
-| Monitoring & backups | ~$10/month |
+Optional components (notebook sessions, additional pipeline engines, search) add cost based on usage. You can enable and disable them at any time from the bioAF UI, and you'll see cost estimates before you provision anything.
 
-Optional components (notebook sessions, additional pipeline engines, search) add $10–$200/month each depending on usage. You can enable and disable these at any time from the bioAF UI, and you'll see cost estimates before you provision anything.
+See [What to Expect on Your GCP Bill]({{ '/docs/installation/gcp-costs/' | relative_url }}) for a full breakdown.
 
 {% include info-bubble.html title="Why does it cost anything if bioAF is free?" content="bioAF the software is free and open source. These costs come from Google Cloud Platform for the servers, database, and storage that the platform runs on — similar to how a free email app still needs you to pay your internet bill." %}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+<title>Guide for Bioinformaticians | bioAF</title>
+<meta name="description" content="How to run pipelines, launch notebooks, and manage environments in bioAF.">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Guide for Bioinformaticians | bioAF</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Guide for Bioinformaticians" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How to run pipelines, launch notebooks, and manage environments in bioAF." />
+<meta property="og:description" content="How to run pipelines, launch notebooks, and manage environments in bioAF." />
+<link rel="canonical" href="http://localhost:4000/docs/user-guides/bioinformaticians/" />
+<meta property="og:url" content="http://localhost:4000/docs/user-guides/bioinformaticians/" />
+<meta property="og:site_name" content="bioAF" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Guide for Bioinformaticians" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"How to run pipelines, launch notebooks, and manage environments in bioAF.","headline":"Guide for Bioinformaticians","url":"http://localhost:4000/docs/user-guides/bioinformaticians/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+<body class="">
+  <nav class="site-nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/assets/images/logo.png" alt="bioAF" class="nav-logo-img">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      
+      <li>
+        <a href="/"
+           
+           >
+          Home
+        </a>
+      </li>
+      
+      <li>
+        <a href="/docs/features/"
+           
+           >
+          Features
+        </a>
+      </li>
+      
+      <li>
+        <a href="/docs/"
+           
+           >
+          Docs
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://github.com/not-that-guy-again/bioAF"
+           target="_blank" rel="noopener"
+           >
+          GitHub <span class="external-icon">&nearr;</span>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <div class="docs-container">
+  <aside class="docs-sidebar">
+  <button class="sidebar-toggle" aria-label="Toggle sidebar" aria-expanded="false">
+    Menu
+  </button>
+  <nav class="sidebar-nav">
+    
+      
+        <div class="sidebar-section">
+          <a href="/docs/"
+             class="sidebar-heading-link ">
+            Getting Started
+          </a>
+        </div>
+      
+    
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-heading">Installation</h4>
+          <ul>
+            
+            <li>
+              <a href="/docs/installation/prerequisites/"
+                 >
+                Prerequisites
+              </a>
+            </li>
+            
+            <li>
+              <a href="/docs/installation/gcp-setup/"
+                 >
+                Deploying on Google Cloud (GCE)
+              </a>
+            </li>
+            
+            <li>
+              <a href="/docs/installation/setup/"
+                 >
+                Setup & Deploy
+              </a>
+            </li>
+            
+            <li>
+              <a href="/docs/installation/post-setup/"
+                 >
+                Post-Setup
+              </a>
+            </li>
+            
+            <li>
+              <a href="/docs/installation/gcp-costs/"
+                 >
+                GCP Costs
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      
+    
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-heading">User Guides</h4>
+          <ul>
+            
+            <li>
+              <a href="/docs/user-guides/bench-scientists/"
+                 >
+                For Bench Scientists
+              </a>
+            </li>
+            
+            <li>
+              <a href="/docs/user-guides/bioinformaticians/"
+                 class="active">
+                For Bioinformaticians
+              </a>
+            </li>
+            
+            <li>
+              <a href="/docs/user-guides/pis-and-lab-managers/"
+                 >
+                For PIs & Lab Managers
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      
+    
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-heading">Features</h4>
+          <ul>
+            
+            <li>
+              <a href="/docs/features/experiments/"
+                 >
+                Experiment Management
+              </a>
+            </li>
+            
+            <li>
+              <a href="/docs/features/pipelines/"
+                 >
+                Pipeline Engine
+              </a>
+            </li>
+            
+            <li>
+              <a href="/docs/features/notebooks/"
+                 >
+                Notebook Sessions
+              </a>
+            </li>
+            
+            <li>
+              <a href="/docs/features/results/"
+                 >
+                Results & Visualization
+              </a>
+            </li>
+            
+            <li>
+              <a href="/docs/features/data/"
+                 >
+                Data Management
+              </a>
+            </li>
+            
+            <li>
+              <a href="/docs/features/cost-center/"
+                 >
+                Cost Center
+              </a>
+            </li>
+            
+            <li>
+              <a href="/docs/features/audit/"
+                 >
+                Audit & Compliance
+              </a>
+            </li>
+            
+            <li>
+              <a href="/docs/features/infrastructure/"
+                 >
+                Infrastructure Management
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      
+    
+      
+        <div class="sidebar-section">
+          <a href="/docs/faq/"
+             class="sidebar-heading-link ">
+            FAQ
+          </a>
+        </div>
+      
+    
+  </nav>
+</aside>
+
+  <article class="docs-content">
+    
+    <h1>Guide for Bioinformaticians</h1>
+    
+    <p>This guide covers the computational biologist workflow in bioAF — running pipelines, working in notebooks, and managing compute environments.</p>
+
+<h2 id="browsing-and-launching-pipelines">Browsing and launching pipelines</h2>
+
+<h3 id="the-pipeline-catalog">The pipeline catalog</h3>
+
+<p>Navigate to <strong>Pipelines</strong> to see the available workflows. bioAF ships with nf-core pipelines pre-configured:</p>
+
+<ul>
+  <li><strong>nf-core/scrnaseq</strong> — Single-cell RNA-seq (10x Chromium, Smart-seq2, etc.)</li>
+  <li><strong>nf-core/rnaseq</strong> — Bulk RNA-seq</li>
+  <li><strong>nf-core/atacseq</strong> — ATAC-seq</li>
+  <li>And more, with the ability to add custom pipelines</li>
+</ul>
+
+<p><img src="/assets/images/screenshot-pipeline-catalog.png" alt="Pipeline catalog showing available workflows with descriptions" class="screenshot-img" /></p>
+
+<h3 id="launching-a-pipeline-run">Launching a pipeline run</h3>
+
+<ol>
+  <li>Select a pipeline from the catalog</li>
+  <li>Choose the experiment and samples to process</li>
+  <li>Configure parameters (or use defaults)</li>
+  <li>Set compute resources (CPU, memory)</li>
+  <li>Click <strong>Launch</strong></li>
+</ol>
+
+<p><img src="/assets/images/screenshot-pipeline-launch-wizard.png" alt="Pipeline launch form with experiment selection, parameter overrides, and resource settings" class="screenshot-img" /></p>
+
+<details class="info-bubble">
+  <summary>
+    <span class="info-icon">i</span>
+    What are Nextflow and Snakemake?
+  </summary>
+  <div class="info-content">
+    Nextflow and Snakemake are workflow managers — tools that break a complex analysis into steps, run them in the right order, and handle parallelism and error recovery. bioAF manages them for you, so you just pick your pipeline, select your data, and hit launch.
+  </div>
+</details>
+
+<h3 id="monitoring-pipeline-runs">Monitoring pipeline runs</h3>
+
+<p>Once launched, you can track progress from the <strong>Runs</strong> page:</p>
+
+<ul>
+  <li>Real-time status for each pipeline stage</li>
+  <li>DAG (directed acyclic graph) visualization showing the workflow structure</li>
+  <li>Resource usage and timing per stage</li>
+  <li>Access to logs for troubleshooting</li>
+</ul>
+
+<p><img src="/assets/images/screenshot-pipeline-provenance.png" alt="Pipeline run detail page showing DAG visualization, stage statuses, and progress" class="screenshot-img" /></p>
+
+<h2 id="working-with-notebooks">Working with notebooks</h2>
+
+<h3 id="launching-a-session">Launching a session</h3>
+
+<ol>
+  <li>Navigate to <strong>Notebook Sessions</strong></li>
+  <li>Click <strong>New Session</strong></li>
+  <li>Choose your environment:
+    <ul>
+      <li><strong>JupyterHub</strong> — For Python-based analysis</li>
+      <li><strong>RStudio</strong> — For R-based analysis</li>
+    </ul>
+  </li>
+  <li>Select a versioned environment (or use the default)</li>
+  <li>Set resource limits and click <strong>Launch</strong></li>
+</ol>
+
+<p>Your session starts in about a minute. Click <strong>Open</strong> to connect directly in your browser.</p>
+
+<p><img src="/assets/images/screenshot-notebooks.png" alt="Notebook Sessions page showing active sessions with environment versions and resource usage" class="screenshot-img" /></p>
+
+<p>Sessions automatically stop after a configurable idle period to manage costs. Your work is saved — you can restart and pick up where you left off.</p>
+
+<h3 id="ssh-access">SSH access</h3>
+
+<p>For tasks that need a terminal, click the <strong>Terminal</strong> button on any running session or pipeline job. This opens a browser-based terminal directly into the running container.</p>
+
+<h2 id="managing-environments">Managing environments</h2>
+
+<h3 id="what-are-environments">What are environments?</h3>
+
+<p>Environments define the software available in your notebook sessions and pipeline runs — Python/R packages, system libraries, and tools. bioAF versions every environment so your analyses are reproducible.</p>
+
+<h3 id="creating-an-environment">Creating an environment</h3>
+
+<ol>
+  <li>Go to <strong>Environments &gt; New Environment</strong></li>
+  <li>Provide a name and description</li>
+  <li>Upload a <strong>Dockerfile</strong> or <strong>conda environment spec</strong></li>
+  <li>Click <strong>Build</strong></li>
+</ol>
+
+<p>bioAF builds the environment image and makes it available for notebook sessions.</p>
+
+<!-- TODO: screenshot-environment-builder.png -->
+<div class="screenshot">Screenshot coming soon: Environment creation form with Dockerfile editor and build status</div>
+
+<details class="info-bubble">
+  <summary>
+    <span class="info-icon">i</span>
+    What is a Dockerfile?
+  </summary>
+  <div class="info-content">
+    A Dockerfile is a recipe that lists the software to install in an environment — think of it as a shopping list for your analysis tools. If you're more comfortable with conda, you can upload a conda `environment.yml` file instead.
+  </div>
+</details>
+
+<h3 id="versioning">Versioning</h3>
+
+<p>Every time you update an environment, bioAF creates a new version. Previous versions remain available, so you can always go back to the exact setup that produced a specific result.</p>
+
+<h2 id="accessing-data-and-files">Accessing data and files</h2>
+
+<p>The <strong>Data &amp; Files</strong> section lets you:</p>
+
+<ul>
+  <li>Browse files by experiment or project</li>
+  <li>Upload new files</li>
+  <li>Download results, count matrices, and reports</li>
+  <li>See file metadata (size, upload date, associated experiment)</li>
+</ul>
+
+<p><img src="/assets/images/screenshot-files.png" alt="File browser showing experiment data files with metadata columns" class="screenshot-img" /></p>
+
+<h2 id="adding-custom-pipelines">Adding custom pipelines</h2>
+
+<p>If you have your own Nextflow or Snakemake workflows, you can add them to the pipeline catalog. Navigate to <strong>Pipelines &gt; Add Pipeline</strong> and provide:</p>
+
+<ul>
+  <li>Pipeline name and description</li>
+  <li>Git repository URL</li>
+  <li>Default parameters</li>
+  <li>Resource recommendations</li>
+</ul>
+
+  </article>
+</div>
+
+  </main>
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <img src="/assets/images/logo.png" alt="bioAF" class="footer-logo-img">
+      <p class="footer-tagline">Free and open source computational biology infrastructure.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Documentation</h4>
+      <ul>
+        <li><a href="/docs/">Getting Started</a></li>
+        <li><a href="/docs/installation/setup/">Installation</a></li>
+        <li><a href="/docs/user-guides/bench-scientists/">User Guides</a></li>
+        <li><a href="/docs/faq/">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Project</h4>
+      <ul>
+        <li><a href="https://github.com/not-that-guy-again/bioAF" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://github.com/not-that-guy-again/bioAF/issues" target="_blank" rel="noopener">Report an Issue</a></li>
+        <li><a href="https://github.com/not-that-guy-again/bioAF/blob/main/LICENSE" target="_blank" rel="noopener">License</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <p class="footer-note">Need help getting set up? We offer support plans and consulting.</p>
+      <p class="footer-note"><a href="mailto:support@bioaf.co">support@bioaf.co</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 bioAF. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

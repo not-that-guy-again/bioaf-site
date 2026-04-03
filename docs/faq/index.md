@@ -38,7 +38,7 @@ You need a machine with Docker and Git installed to run the setup. The actual co
 
 ### How much does the GCP infrastructure cost?
 
-The base platform costs roughly $110/month when idle. See [What to Expect on Your GCP Bill]({{ '/docs/installation/gcp-costs/' | relative_url }}) for a detailed breakdown.
+Costs are usage-based — an idle platform costs very little, and costs scale with pipeline runs, notebook sessions, and data stored. See [What to Expect on Your GCP Bill]({{ '/docs/installation/gcp-costs/' | relative_url }}) for a full breakdown.
 
 ## Data & Security
 

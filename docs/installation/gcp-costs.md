@@ -10,28 +10,26 @@ bioAF is free and open source software. The costs below come from Google Cloud P
 
 These components are provisioned during setup and are required for bioAF to function.
 
-| Component | What it does | Estimated monthly cost |
-|-----------|-------------|----------------------|
-| GKE Autopilot | Runs pipelines and notebook sessions | ~$70/month (idle) |
-| Cloud SQL (PostgreSQL) | Stores experiments, samples, metadata, audit logs | ~$30/month |
-| GCS buckets | Stores FASTQ files, pipeline outputs, results | ~$0 (scales with data) |
+| Component | What it does | Cost |
+|-----------|-------------|------|
+| GKE Autopilot | Runs pipelines and notebook sessions | Usage-based; scales to near-zero when idle |
+| Cloud SQL (PostgreSQL) | Stores experiments, samples, metadata, audit logs | Usage-based |
+| GCS buckets | Stores FASTQ files, pipeline outputs, results | Usage-based; scales with data stored |
 | Monitoring & logging | Health checks and log collection | Runs on GKE, no extra cost |
-| Backups | Database point-in-time recovery, config exports | ~$5/month |
-
-**Base total: ~$110/month when idle.**
+| Backups | Database point-in-time recovery, config exports | Usage-based |
 
 ## Optional components
 
 These are enabled through the bioAF UI as your team needs them. Each shows a cost estimate before you provision it.
 
-| Component | What it does | Estimated monthly cost |
-|-----------|-------------|----------------------|
-| JupyterHub | Interactive Python notebooks | $50–$200/session |
-| RStudio Server | Interactive R sessions | $50–$200/session |
-| cellxgene | Single-cell data visualization | ~$20/month |
-| Meilisearch | Full-text search across the platform | ~$10/month |
-| Filestore (NFS) | Shared filesystem for SLURM workloads | ~$50/month |
-| SLURM cluster | HPC-style batch compute | $200–$1,500/month (autoscales) |
+| Component | What it does | Cost |
+|-----------|-------------|------|
+| JupyterHub | Interactive Python notebooks | Usage-based; charged per session hour |
+| RStudio Server | Interactive R sessions | Usage-based; charged per session hour |
+| cellxgene | Single-cell data visualization | Usage-based |
+| Meilisearch | Full-text search across the platform | Usage-based |
+| Filestore (NFS) | Shared filesystem for SLURM workloads | Usage-based |
+| SLURM cluster | HPC-style batch compute | Usage-based; autoscales to zero when idle |
 
 ## Cost-saving features
 
