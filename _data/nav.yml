@@ -2,7 +2,7 @@ main:
   - title: Home
     url: /
   - title: Features
-    url: /docs/features/
+    url: /features/
   - title: Docs
     url: /docs/
   - title: Services

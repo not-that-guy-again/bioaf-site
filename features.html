@@ -1,0 +1,129 @@
+---
+layout: default
+title: Features
+description: A complete platform for computational biology — from sample registration to publication-ready results.
+---
+
+<div class="features-page">
+
+  <div class="features-hero">
+    <h1>Everything your lab needs, in one place</h1>
+    <p>bioAF covers the full computational biology workflow &mdash; experiment tracking, pipeline execution, interactive analysis, and everything in between.</p>
+    <a href="{{ '/docs/installation/setup/' | relative_url }}" class="btn btn-primary">Get Started</a>
+  </div>
+
+  <div class="features-grid">
+
+    <div class="feature-page-card">
+      <div class="feature-page-icon">&#x1f9ec;</div>
+      <h2>Experiment Management</h2>
+      <p class="feature-page-tagline">Track experiments from bench to publication with structured, standards-compliant metadata.</p>
+      <ul>
+        <li>MINSEQE-compliant metadata for every experiment</li>
+        <li>Sample batching with a defined status lifecycle</li>
+        <li>Files, pipeline runs, and results all linked back to their source experiment</li>
+        <li>GEO submission export with required fields pre-populated</li>
+      </ul>
+      <a href="{{ '/docs/features/experiments/' | relative_url }}" class="feature-page-link">Deep dive &rarr;</a>
+    </div>
+
+    <div class="feature-page-card">
+      <div class="feature-page-icon">&#x2699;&#xfe0f;</div>
+      <h2>Pipeline Engine</h2>
+      <p class="feature-page-tagline">Run bioinformatics workflows without managing compute infrastructure.</p>
+      <ul>
+        <li>Pre-configured nf-core pipelines &mdash; scRNA-seq, bulk RNA-seq, ATAC-seq, and more</li>
+        <li>One-click launch with parameter overrides</li>
+        <li>Real-time DAG visualization and log streaming per stage</li>
+        <li>Outputs automatically stored and linked back to the originating experiment</li>
+      </ul>
+      <a href="{{ '/docs/features/pipelines/' | relative_url }}" class="feature-page-link">Deep dive &rarr;</a>
+    </div>
+
+    <div class="feature-page-card">
+      <div class="feature-page-icon">&#x1f4d3;</div>
+      <h2>Notebook Sessions</h2>
+      <p class="feature-page-tagline">Interactive analysis in JupyterHub or RStudio &mdash; in your browser, no local setup required.</p>
+      <ul>
+        <li>JupyterHub for Python, RStudio Server for R</li>
+        <li>Versioned environments built from a Dockerfile or conda spec</li>
+        <li>Auto-stop on idle to eliminate unnecessary cloud spend</li>
+        <li>Browser-based terminal access to any running session</li>
+      </ul>
+      <a href="{{ '/docs/features/notebooks/' | relative_url }}" class="feature-page-link">Deep dive &rarr;</a>
+    </div>
+
+    <div class="feature-page-card">
+      <div class="feature-page-icon">&#x1f4ca;</div>
+      <h2>Results &amp; Visualization</h2>
+      <p class="feature-page-tagline">Explore and share analysis results &mdash; from single-cell embeddings to QC reports.</p>
+      <ul>
+        <li>Integrated cellxgene for interactive single-cell visualization</li>
+        <li>Auto-generated QC dashboards after every pipeline run</li>
+        <li>Searchable plot archive with full-resolution downloads</li>
+        <li>Role-based sharing so PIs can review results without touching the pipeline</li>
+      </ul>
+      <a href="{{ '/docs/features/results/' | relative_url }}" class="feature-page-link">Deep dive &rarr;</a>
+    </div>
+
+    <div class="feature-page-card">
+      <div class="feature-page-icon">&#x1f5c4;&#xfe0f;</div>
+      <h2>Data Management</h2>
+      <p class="feature-page-tagline">Centralized file management with automatic organization across the research lifecycle.</p>
+      <ul>
+        <li>Upload, browse, and download experiment data in one place</li>
+        <li>Four-tier storage lifecycle: Ingest, Raw, Working, Results</li>
+        <li>Auto-ingest for sequencer output files via Cloud Pub/Sub</li>
+        <li>All data stays in your own GCP project &mdash; no hosted dependencies</li>
+      </ul>
+      <a href="{{ '/docs/features/data/' | relative_url }}" class="feature-page-link">Deep dive &rarr;</a>
+    </div>
+
+    <div class="feature-page-card">
+      <div class="feature-page-icon">&#x1f4b0;</div>
+      <h2>Cost Center</h2>
+      <p class="feature-page-tagline">Real-time cloud spending visibility without needing to navigate the GCP console.</p>
+      <ul>
+        <li>Per-component and per-project spend breakdowns</li>
+        <li>Trend charts with month-to-date projections</li>
+        <li>Budget alerts at 50%, 80%, and 100% of your threshold</li>
+        <li>Idle resource detection and cost optimization recommendations</li>
+      </ul>
+      <a href="{{ '/docs/features/cost-center/' | relative_url }}" class="feature-page-link">Deep dive &rarr;</a>
+    </div>
+
+    <div class="feature-page-card">
+      <div class="feature-page-icon">&#x1f50d;</div>
+      <h2>Audit &amp; Compliance</h2>
+      <p class="feature-page-tagline">An immutable record of everything that happened &mdash; who did what, when, and to which resource.</p>
+      <ul>
+        <li>Every experiment, pipeline run, session, and file event is logged</li>
+        <li>Human-readable descriptions, not raw event codes</li>
+        <li>Trace any result back to its exact input data and parameters</li>
+        <li>Exportable for regulatory reviews and compliance reporting</li>
+      </ul>
+      <a href="{{ '/docs/features/audit/' | relative_url }}" class="feature-page-link">Deep dive &rarr;</a>
+    </div>
+
+    <div class="feature-page-card">
+      <div class="feature-page-icon">&#x1f527;</div>
+      <h2>Infrastructure Management</h2>
+      <p class="feature-page-tagline">Enable and disable platform components from the UI &mdash; no Terraform or Kubernetes experience needed.</p>
+      <ul>
+        <li>Component catalog with plain-language descriptions and cost estimates</li>
+        <li>Preview the infrastructure plan before anything is provisioned</li>
+        <li>Version-controlled infrastructure history with one-click rollback</li>
+        <li>In-app upgrade notifications &mdash; review the changelog before applying</li>
+      </ul>
+      <a href="{{ '/docs/features/infrastructure/' | relative_url }}" class="feature-page-link">Deep dive &rarr;</a>
+    </div>
+
+  </div>
+
+  <div class="features-cta">
+    <h2>Ready to get started?</h2>
+    <p>bioAF is free and open source. Deploy it on your own Google Cloud project in under an hour.</p>
+    <a href="{{ '/docs/installation/setup/' | relative_url }}" class="btn btn-primary">Read the Setup Guide</a>
+  </div>
+
+</div>
