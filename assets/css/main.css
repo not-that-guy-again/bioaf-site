@@ -598,13 +598,13 @@ pre code {
 .tech-strip-groups {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .tech-group {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .tech-group-label {
@@ -620,30 +620,46 @@ pre code {
 .tech-logos {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: center;
+  gap: 0.75rem;
 }
 
 .tech-logo-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   gap: 0.5rem;
-  opacity: 0.55;
-  transition: opacity 0.2s ease;
+  width: 108px;
+  padding: 1rem 0.75rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-bg);
+  opacity: 0.6;
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tech-logo-item:hover {
   opacity: 1;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.tech-logo-item .logo-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 100%;
 }
 
 .tech-logo-item img {
-  height: 40px;
+  max-height: 36px;
+  max-width: 72px;
   width: auto;
-  max-width: 90px;
+  height: auto;
   object-fit: contain;
   filter: grayscale(100%);
   transition: filter 0.2s ease;
+  display: block;
 }
 
 .tech-logo-item:hover img {
@@ -651,17 +667,24 @@ pre code {
 }
 
 .tech-logo-item span {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--color-text-muted);
   font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
-  .tech-logos {
-    gap: 1.25rem;
+  .tech-logo-item {
+    width: 90px;
+    padding: 0.75rem 0.5rem 0.625rem;
+  }
+  .tech-logo-item .logo-img-wrap {
+    height: 30px;
   }
   .tech-logo-item img {
-    height: 32px;
+    max-height: 30px;
+    max-width: 60px;
   }
 }
 
