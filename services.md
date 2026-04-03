@@ -8,7 +8,7 @@ description: Consulting, deployment, and support services for bioAF from the per
 
   <div class="services-hero">
     <h1>Work with me</h1>
-    <p>bioAF is free and open source. If your team needs help getting it deployed, extended, or maintained, I offer a range of services — from a single advisory call to an ongoing support relationship.</p>
+    <p>bioAF is free and open source. If your team needs help getting it deployed, extended, or maintained, We offer a range of services — from a single advisory call to an ongoing support relationship.</p>
     <a href="mailto:brent@bioaf.co" class="btn btn-primary">Get in touch &rarr;</a>
   </div>
 
