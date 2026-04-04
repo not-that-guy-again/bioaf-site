@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Services
+tab_title: Services and Support
 description: Consulting, deployment, and support services for bioAF from the person who built it.
 ---
 
