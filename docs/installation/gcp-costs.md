@@ -16,7 +16,7 @@ These components are provisioned during setup and are required for bioAF to func
 | Cloud SQL (PostgreSQL) | Stores experiments, samples, metadata, audit logs | Usage-based |
 | GCS buckets | Stores FASTQ files, pipeline outputs, results | Usage-based; scales with data stored |
 | Monitoring & logging | Health checks and log collection | Runs on GKE, no extra cost |
-| Backups | Database point-in-time recovery, config exports | Usage-based |
+| Backups | PostgreSQL snapshots, config exports, Terraform state (all stored in GCS) | Usage-based |
 
 ## Optional components
 
@@ -28,13 +28,11 @@ These are enabled through the bioAF UI as your team needs them. Each shows a cos
 | RStudio Server | Interactive R sessions | Usage-based; charged per session hour |
 | cellxgene | Single-cell data visualization | Usage-based |
 | Meilisearch | Full-text search across the platform | Usage-based |
-| Filestore (NFS) | Shared filesystem for SLURM workloads | Usage-based |
-| SLURM cluster | HPC-style batch compute | Usage-based; autoscales to zero when idle |
+| SLURM cluster | HPC-style batch compute (coming soon) | Usage-based; autoscales to zero when idle |
 
 ## Cost-saving features
 
 - **GKE Autopilot** scales to near-zero when no pipelines or sessions are running
-- **SLURM** autoscales down to zero nodes when idle
 - **Notebook sessions** auto-stop after a configurable idle timeout
 - **The Cost Center** in bioAF shows real-time spending, per-component breakdowns, and lets you set budget alerts
 

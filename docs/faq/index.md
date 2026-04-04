@@ -52,7 +52,7 @@ Your data stays in your GCP project. bioAF can export all infrastructure configu
 
 ### Is my data backed up?
 
-Yes. bioAF configures Cloud SQL point-in-time recovery for the database, GCS versioning for data files, and provides one-click config export. See the backup settings in Admin for details.
+Yes. bioAF backs up across four tiers: PostgreSQL snapshots (`pg_dump` to GCS with configurable retention and rotation), GCS object versioning for data files, platform configuration exports, and Terraform state files. All backup data is stored in a persistent `bioaf-backups-{project_id}` GCS bucket. See the backup settings in Admin for details.
 
 ## Pipelines & Analysis
 
@@ -72,7 +72,7 @@ Yes. Upload a Dockerfile or conda environment specification, and bioAF will buil
 
 ### How do I update bioAF?
 
-bioAF checks for updates automatically and notifies you in the UI. Run `./bioaf update` or click **Upgrade** in the admin panel. Updates include a rollback option.
+Click **Check for updates** in **Settings > Information** to see if a new version is available. bioAF queries the GitHub Releases API and shows the changelog and release link when an update is found. Run `./bioaf update` or click **Upgrade** in the admin panel to apply it. Updates include a rollback option.
 
 ### Where do I report bugs?
 

@@ -44,9 +44,8 @@ Every infrastructure change is version-controlled. This means:
 
 ## Upgrades
 
-bioAF checks for new versions automatically. When an update is available:
+Check for new versions by clicking **Check for updates** in **Settings > Information**. When an update is available:
 
-1. You'll see a notification in the UI
-2. Review what changed in the new version
-3. Click **Upgrade** to pull the update, rebuild, and migrate
-4. If anything goes wrong, roll back with one click
+1. Review the changelog and release notes
+2. Click **Upgrade** to pull the update, rebuild, and migrate
+3. If anything goes wrong, roll back with one click

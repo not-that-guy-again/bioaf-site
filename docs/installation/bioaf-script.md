@@ -136,7 +136,7 @@ Downgrades the database schema to a specific revision. Used for rollbacks.
 ./bioaf backup
 ```
 
-Creates a compressed database backup and saves it to a `backups/` directory in your installation folder. The backup file is timestamped, e.g. `bioaf_20260403_142500.sql.gz`.
+Creates a compressed database backup (`pg_dump`) and uploads it to the `bioaf-backups-{project_id}` GCS bucket. The backup file is timestamped, e.g. `bioaf_20260403_142500.sql.gz`. Retention and rotation are configurable in Admin > Backup Settings.
 
 Run this before major updates or any operation that modifies data.
 
