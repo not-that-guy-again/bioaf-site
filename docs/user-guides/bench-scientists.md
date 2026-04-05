@@ -63,7 +63,7 @@ Click **View in cellxgene** to open an interactive explorer for your single-cell
 - Select cell populations for comparison
 - Export plots
 
-<img src="{{ '/assets/images/screenshot-plot-preview.png' | relative_url }}" alt="cellxgene viewer showing UMAP embedding colored by cell type clusters" class="screenshot-img">
+<img src="{{ '/assets/images/screenshot-cellxgene-discover.png' | relative_url }}" alt="CellxGene Discover showing UMAP embedding colored by cell type clusters" class="screenshot-img">
 
 ### Downloading results
 

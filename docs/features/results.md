@@ -15,7 +15,7 @@ For single-cell datasets, bioAF integrates [cellxgene](https://chanzuckerberg.gi
 - Select and compare cell populations
 - Export visualizations
 
-<img src="{{ '/assets/images/screenshot-plot-preview.png' | relative_url }}" alt="cellxgene viewer showing UMAP embedding with cells colored by cluster, gene expression sidebar, and metadata panel" class="screenshot-img">
+<img src="{{ '/assets/images/screenshot-cellxgene-discover.png' | relative_url }}" alt="CellxGene Discover showing UMAP embedding with cells colored by cluster, gene expression sidebar, and metadata panel" class="screenshot-img">
 
 No installation needed — cellxgene runs as part of the platform and opens directly in your browser.
 
