@@ -759,12 +759,14 @@ pre code {
   color: var(--color-text-muted);
   border-bottom: 1px solid var(--color-border);
   padding-bottom: 0.5rem;
+  text-align: center;
 }
 
 .tech-logos {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  justify-content: center;
 }
 
 .tech-logo-item {
