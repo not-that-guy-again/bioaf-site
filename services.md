@@ -10,7 +10,7 @@ description: Consulting, deployment, and support services for bioAF from the per
   <div class="services-hero">
     <h1>Work with me</h1>
     <p>bioAF is free and open source. If your team needs help getting it deployed, extended, or maintained, We offer a range of services — from a single advisory call to an ongoing support relationship.</p>
-    <a href="mailto:brent@bioaf.co" class="btn btn-primary">Get in touch &rarr;</a>
+    <a href="mailto:hello@bioaf.co" class="btn btn-primary">Get in touch &rarr;</a>
   </div>
 
   <div class="services-grid">
@@ -92,7 +92,7 @@ description: Consulting, deployment, and support services for bioAF from the per
   <div class="services-cta">
     <h2>Ready to talk?</h2>
     <p>Every engagement starts with a conversation. Reach out and tell me what you're working on — I'll let you know if and how I can help.</p>
-    <a href="mailto:brent@bioaf.co" class="btn btn-primary">brent@bioaf.co</a>
+    <a href="mailto:hello@bioaf.co" class="btn btn-primary">hello@bioaf.co</a>
   </div>
 
 </div>
