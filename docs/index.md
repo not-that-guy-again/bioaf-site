@@ -17,15 +17,20 @@ Welcome to bioAF. This guide will get you from zero to a working computational b
 
 ## Quick start
 
+{% include info-bubble.html title="bioAF runs on a cloud VM, not your laptop" content="bioAF must be deployed on a Google Cloud virtual machine. It will not work on your local machine (Mac, Windows, or Linux desktop). If you haven't set up a GCP VM yet, start with the <a href='installation/gcp-setup/'>Deploying on Google Cloud</a> guide first." %}
+
+Once you're connected to your GCP VM:
+
 ```bash
 git clone https://github.com/not-that-guy-again/bioAF.git
 cd bioAF
+./install.sh
 ./bioaf setup
 ```
 
-The `setup` command walks you through everything interactively: it checks your prerequisites, generates configuration, builds the platform, runs database migrations, and creates your admin account.
+`install.sh` checks your prerequisites and generates the configuration file. Then `setup` walks you through the rest interactively: building the platform, running database migrations, and creating your admin account.
 
-{% include info-bubble.html title="What does setup actually do?" content="It checks that Docker and Git are installed, generates a `.env` file with secure credentials, builds container images for the backend, frontend, and database, applies database schema migrations, and prompts you to create an admin user. The whole process takes about 10 minutes depending on your internet connection." %}
+{% include info-bubble.html title="What do these commands do?" content="<code>install.sh</code> verifies that Docker, Git, and the gcloud CLI are installed, and generates a <code>.env</code> file with secure credentials. <code>./bioaf setup</code> then builds container images, applies database migrations, provisions GCP infrastructure, and prompts you to create an admin user. The whole process takes about 30 minutes depending on your internet connection." %}
 
 ## Next steps
 

@@ -4,7 +4,11 @@ title: Prerequisites
 description: What you need before installing bioAF.
 ---
 
-Before running bioAF setup, make sure you have the following.
+## Cloud VM required
+
+bioAF must be deployed on a Google Cloud virtual machine — **it cannot be run on your local machine** (Mac, Windows, or Linux desktop). If you haven't set up a GCP VM yet, start with the [Deploying on Google Cloud]({{ '/docs/installation/gcp-setup/' | relative_url }}) guide.
+
+All commands below should be run on your VM, not your laptop.
 
 ## Required software
 

@@ -4,17 +4,20 @@ title: Setup & Deploy
 description: Step-by-step guide to installing and deploying bioAF.
 ---
 
-## One-command setup
+{% include info-bubble.html title="These commands must be run on a GCP virtual machine" content="bioAF is deployed to a Google Cloud VM — it will not work on your local machine (Mac, Windows, or Linux desktop). If you haven't created a VM yet, follow the <a href='../gcp-setup/'>Deploying on Google Cloud</a> guide first, then come back here." %}
 
-The fastest way to get started:
+## Quick setup
+
+The fastest way to get started (from your GCP VM):
 
 ```bash
 git clone https://github.com/not-that-guy-again/bioAF.git
 cd bioAF
+./install.sh
 ./bioaf setup
 ```
 
-The setup command is interactive — it will prompt you for your GCP project ID, generate secure credentials, build the platform, and create your admin account.
+`install.sh` checks your prerequisites and generates the configuration file at `docker/.env`. Then the `setup` command builds the platform, provisions infrastructure, and creates your admin account interactively.
 
 ## Step-by-step setup
 

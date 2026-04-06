@@ -179,10 +179,11 @@ newgrp docker
 ```bash
 git clone https://github.com/not-that-guy-again/bioAF.git
 cd bioAF
+./install.sh
 ./bioaf setup
 ```
 
-The setup command will prompt you for:
+`install.sh` checks your prerequisites and generates the configuration file. Then the setup command will prompt you for:
 - Your GCP project ID
 - The path to your service account JSON key file (from Step 5)
 - An email and password for the admin account
